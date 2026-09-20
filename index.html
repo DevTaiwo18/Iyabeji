@@ -159,6 +159,16 @@
 
   @media (max-width: 720px) {
     nav.links { display: none; }
+    .brand { font-size: 0.95rem; }
+  }
+  @media (max-width: 420px) {
+    .nav-cta {
+      padding: 0;
+      width: 38px;
+      height: 38px;
+      justify-content: center;
+    }
+    .nav-cta .nav-cta-text { display: none; }
   }
 
   /* ---------- Hero ---------- */
@@ -573,7 +583,7 @@
       <a href="#location">Location</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="nav-cta" href="tel:08054524427">📞 08054524427</a>
+    <a class="nav-cta" href="tel:08054524427" aria-label="Call 0805 452 4427">📞<span class="nav-cta-text"> 08054524427</span></a>
   </div>
 </header>
 
