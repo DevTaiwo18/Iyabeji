@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Iyabeji Groundnut &amp; Egusi Ventures</title>
+<meta name="description" content="Wholesale and retail groundnut and egusi supplier at Block 550, Bodija Market, Ibadan, Oyo State, Nigeria. Trading since 1999." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥜</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FBF3E7;
+    --cream-deep: #F3E6D3;
+    --paper: #FFFCF7;
+    --brown-deep: #3E2A1C;
+    --brown-mid: #6B4530;
+    --brown-soft: #8A6A4F;
+    --terracotta: #C4622D;
+    --terracotta-deep: #A34E22;
+    --olive: #8A7D4E;
+    --gold: #D9A441;
+    --line: rgba(62, 42, 28, 0.14);
+    --focus: #A34E22;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --cream: #241811;
+      --cream-deep: #2D1F15;
+      --paper: #2A1D14;
+      --brown-deep: #F3E6D3;
+      --brown-mid: #D9C3AC;
+      --brown-soft: #B79876;
+      --terracotta: #E08148;
+      --terracotta-deep: #EFA06C;
+      --olive: #C0B27A;
+      --gold: #E8BB63;
+      --line: rgba(243, 230, 211, 0.14);
+      --focus: #E08148;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --cream: #241811;
+    --cream-deep: #2D1F15;
+    --paper: #2A1D14;
+    --brown-deep: #F3E6D3;
+    --brown-mid: #D9C3AC;
+    --brown-soft: #B79876;
+    --terracotta: #E08148;
+    --terracotta-deep: #EFA06C;
+    --olive: #C0B27A;
+    --gold: #E8BB63;
+    --line: rgba(243, 230, 211, 0.14);
+    --focus: #E08148;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    background: var(--cream);
+    color: var(--brown-deep);
+    font-family: 'Karla', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    color: var(--brown-deep);
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  .wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-inline: 20px;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--cream) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 16px;
+    gap: 16px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--brown-deep);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(155deg, var(--terracotta), var(--terracotta-deep));
+    display: grid;
+    place-items: center;
+    color: var(--paper);
+    font-size: 1rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  nav.links {
+    display: flex;
+    gap: 28px;
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+  nav.links a {
+    text-decoration: none;
+    color: var(--brown-mid);
+    transition: color 0.15s ease;
+  }
+  nav.links a:hover, nav.links a:focus-visible { color: var(--terracotta-deep); }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--terracotta);
+    color: var(--paper);
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s ease;
+  }
+  .nav-cta:hover { background: var(--terracotta-deep); }
+
+  @media (max-width: 720px) {
+    nav.links { display: none; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 85% 10%, color-mix(in srgb, var(--gold) 22%, transparent), transparent),
+      radial-gradient(ellipse 55% 45% at 8% 90%, color-mix(in srgb, var(--olive) 18%, transparent), transparent);
+    pointer-events: none;
+  }
+  .hero-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 48px;
+    align-items: center;
+    padding-block: 68px 56px;
+  }
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; padding-block: 40px 56px; gap: 32px; }
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--terracotta-deep);
+    margin-bottom: 18px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 22px;
+    height: 2px;
+    background: var(--terracotta-deep);
+  }
+  .hero h1 {
+    font-size: clamp(2.3rem, 5.4vw, 3.6rem);
+    font-weight: 600;
+    line-height: 1.05;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--terracotta-deep);
+  }
+  .hero-tagline {
+    margin-top: 20px;
+    font-size: 1.15rem;
+    color: var(--brown-mid);
+    max-width: 46ch;
+  }
+  .hero-actions {
+    margin-top: 32px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .btn-primary, .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 24px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+  .btn-primary {
+    background: var(--brown-deep);
+    color: var(--cream);
+  }
+  .btn-primary:hover { transform: translateY(-1px); background: var(--terracotta-deep); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--brown-deep);
+    border: 1.5px solid var(--line);
+  }
+  .btn-secondary:hover { border-color: var(--terracotta-deep); color: var(--terracotta-deep); }
+
+  .hero-stats {
+    margin-top: 40px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .stat-num {
+    font-family: 'Fraunces', serif;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--terracotta-deep);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.78rem;
+    color: var(--brown-soft);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* hero image */
+  .hero-photo { position: relative; }
+  .hero-photo-frame {
+    aspect-ratio: 4 / 3.1;
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 30px 60px -20px rgba(62, 42, 28, 0.35);
+  }
+  .hero-photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+  .img-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: 24px;
+    background: repeating-linear-gradient(45deg,
+      color-mix(in srgb, var(--brown-soft) 14%, var(--cream-deep)) 0 14px,
+      color-mix(in srgb, var(--brown-soft) 8%, var(--cream-deep)) 14px 28px);
+    color: var(--brown-mid);
+  }
+  .img-placeholder .ph-icon { font-size: 2.1rem; opacity: 0.7; }
+  .img-placeholder .ph-label { font-weight: 700; font-size: 0.92rem; color: var(--brown-deep); }
+  .img-placeholder .ph-sub { font-size: 0.78rem; color: var(--brown-soft); max-width: 26ch; }
+
+  .hero-photo-badge {
+    position: absolute;
+    bottom: -18px;
+    left: -18px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 14px 18px;
+    box-shadow: 0 16px 32px -12px rgba(62, 42, 28, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  @media (max-width: 500px) {
+    .hero-photo-badge { left: 8px; bottom: -14px; padding: 10px 14px; }
+  }
+  .hero-photo-badge .badge-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--olive) 22%, var(--paper));
+    display: grid;
+    place-items: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .hero-photo-badge .badge-title { font-weight: 700; font-size: 0.88rem; }
+  .hero-photo-badge .badge-sub { font-size: 0.75rem; color: var(--brown-soft); }
+
+  /* ---------- Section shell ---------- */
+  section { padding-block: 76px; }
+  @media (max-width: 720px) { section { padding-block: 52px; } }
+  .section-head { max-width: 60ch; margin-bottom: 44px; }
+  .section-head h2 { font-size: clamp(1.7rem, 3.6vw, 2.3rem); font-weight: 600; }
+  .section-head p { margin-top: 14px; color: var(--brown-mid); font-size: 1.02rem; }
+  .section-eyebrow {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--olive);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .alt-bg { background: var(--cream-deep); }
+
+  /* ---------- About ---------- */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 36px; } }
+  .about-copy p { color: var(--brown-mid); margin-top: 16px; }
+  .about-copy p:first-of-type { margin-top: 0; }
+  .about-copy strong { color: var(--brown-deep); }
+
+  .about-figure { border-radius: 20px; overflow: hidden; position: relative; }
+  .about-figure-inner { aspect-ratio: 5 / 4; }
+  .about-figure-inner img { width: 100%; height: 100%; object-fit: cover; }
+
+  .milestones {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+  }
+  @media (max-width: 500px) { .milestones { grid-template-columns: 1fr; gap: 16px; } }
+  .milestone-num { font-family: 'Fraunces', serif; font-size: 1.6rem; font-weight: 600; color: var(--terracotta-deep); }
+  .milestone-label { font-size: 0.85rem; color: var(--brown-soft); margin-top: 2px; }
+
+  /* ---------- Products ---------- */
+  .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  @media (max-width: 780px) { .products-grid { grid-template-columns: 1fr; } }
+
+  .product-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .product-card:hover { transform: translateY(-4px); box-shadow: 0 24px 40px -20px rgba(62, 42, 28, 0.28); }
+  .product-photo { height: 260px; position: relative; overflow: hidden; flex-shrink: 0; }
+  .product-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+  @media (max-width: 480px) {
+    .product-photo { height: 220px; }
+  }
+  .product-photo .img-placeholder { border-radius: 0; }
+  .product-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--paper);
+    color: var(--brown-deep);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 999px;
+    z-index: 2;
+  }
+  .product-body { padding: 26px 26px 28px; flex: 1; display: flex; flex-direction: column; }
+  .product-body h3 { font-size: 1.35rem; font-weight: 600; }
+  .product-body p { margin-top: 10px; color: var(--brown-mid); font-size: 0.96rem; flex: 1; }
+  .product-specs { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .spec-pill {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--brown-mid);
+    background: var(--cream-deep);
+    border: 1px solid var(--line);
+    padding: 6px 12px;
+    border-radius: 999px;
+  }
+
+  /* ---------- Location ---------- */
+  .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch; }
+  @media (max-width: 860px) { .location-grid { grid-template-columns: 1fr; } }
+
+  .location-card { background: var(--paper); border: 1px solid var(--line); border-radius: 20px; padding: 36px; }
+  @media (max-width: 500px) {
+    .location-card { padding: 24px; }
+  }
+  .location-row { display: flex; gap: 16px; padding-block: 16px; border-top: 1px solid var(--line); }
+  .location-row:first-of-type { border-top: none; padding-top: 0; }
+  .location-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--terracotta) 14%, var(--paper));
+    display: grid;
+    place-items: center;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+  }
+  .location-row h4 { font-family: 'Karla', sans-serif; font-weight: 700; font-size: 0.98rem; color: var(--brown-deep); margin: 0; }
+  .location-row p { margin-top: 3px; color: var(--brown-mid); font-size: 0.92rem; }
+
+  .map-frame { border-radius: 20px; overflow: hidden; position: relative; min-height: 340px; background: var(--cream-deep); }
+  .map-visual { position: absolute; inset: 0; background: linear-gradient(155deg, color-mix(in srgb, var(--olive) 16%, var(--cream-deep)), var(--cream-deep) 65%); }
+  .map-pin-wrap { position: absolute; inset: 0; display: grid; place-items: center; }
+  .map-pin { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .map-pin-dot {
+    width: 54px;
+    height: 54px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    background: var(--terracotta);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 14px 30px -10px rgba(62, 42, 28, 0.4);
+  }
+  .map-pin-dot span { transform: rotate(45deg); font-size: 1.2rem; }
+  .map-pin-label {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    box-shadow: 0 10px 20px -10px rgba(62,42,28,0.25);
+  }
+  .map-grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 34px 34px;
+    opacity: 0.5;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-section {
+    background: var(--brown-deep);
+    color: var(--cream);
+    border-radius: 28px;
+    margin-inline: 20px;
+    padding: 56px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  @media (max-width: 640px) { .contact-section { padding: 40px 24px; margin-inline: 12px; } }
+  .contact-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 85% 15%, color-mix(in srgb, var(--terracotta) 35%, transparent), transparent 60%);
+    pointer-events: none;
+  }
+  .contact-inner { position: relative; max-width: 1080px; margin: 0 auto; }
+  .contact-head { max-width: 52ch; }
+  .contact-head .section-eyebrow { color: var(--gold); }
+  .contact-head h2 { color: var(--cream); }
+  .contact-head p { color: color-mix(in srgb, var(--cream) 72%, transparent); margin-top: 14px; font-size: 1.02rem; }
+
+  .contact-methods { margin-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  @media (max-width: 640px) { .contact-methods { grid-template-columns: 1fr; } }
+
+  .contact-card {
+    background: color-mix(in srgb, var(--cream) 8%, transparent);
+    border: 1px solid color-mix(in srgb, var(--cream) 18%, transparent);
+    border-radius: 18px;
+    padding: 24px;
+    text-decoration: none;
+    color: var(--cream);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .contact-card:hover { background: color-mix(in srgb, var(--cream) 14%, transparent); border-color: color-mix(in srgb, var(--terracotta) 60%, var(--cream)); }
+  .contact-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: var(--terracotta);
+    display: grid;
+    place-items: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
+  .contact-card-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: color-mix(in srgb, var(--cream) 60%, transparent); }
+  .contact-card-value { font-weight: 700; font-size: 1.05rem; margin-top: 2px; }
+
+  .contact-hours {
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid color-mix(in srgb, var(--cream) 18%, transparent);
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-size: 0.92rem;
+    color: color-mix(in srgb, var(--cream) 78%, transparent);
+  }
+  .contact-hours strong { color: var(--cream); }
+  @media (max-width: 480px) {
+    .contact-hours span:nth-child(2) { display: none; }
+    .contact-hours { flex-direction: column; gap: 6px; }
+  }
+
+  /* ---------- Footer ---------- */
+  footer { padding-block: 40px; border-top: 1px solid var(--line); }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .footer-inner p { font-size: 0.85rem; color: var(--brown-soft); margin: 0; }
+  .footer-brand { display: flex; align-items: center; gap: 10px; font-family: 'Fraunces', serif; font-weight: 600; color: var(--brown-deep); }
+  @media (max-width: 500px) {
+    .footer-inner { flex-direction: column; align-items: flex-start; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="brand-mark">IG</span>
+      Iyabeji Ventures
+    </a>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="tel:08054524427">📞 08054524427</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding-block:0;">
+    <div class="hero-bg"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Bodija Market · Ibadan · Since 1999</span>
+        <h1>Iyabeji Groundnut &amp; Egusi Ventures</h1>
+        <p class="hero-tagline">Your trusted wholesale and retail groundnut and egusi supplier, sourced fresh and sold by the bag or by the cup, straight from Block 550, Bodija Market.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="tel:08054524427">Call to Order</a>
+          <a class="btn-secondary" href="#products">View Products</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">26 yrs</div>
+            <div class="stat-label">Trading in Bodija</div>
+          </div>
+          <div>
+            <div class="stat-num">2</div>
+            <div class="stat-label">Core Products</div>
+          </div>
+          <div>
+            <div class="stat-num">Wholesale</div>
+            <div class="stat-label">&amp; Retail</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="hero-photo-frame">
+          <img src="images/groundnut-bags.jpg" alt="Stacked bags of groundnut at Iyabeji Ventures, Bodija Market"
+            onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'img-placeholder', innerHTML:'<div class=&quot;ph-icon&quot;>🥜</div><div class=&quot;ph-label&quot;>Photo: Stacked groundnut bags</div><div class=&quot;ph-sub&quot;>Add images/groundnut-bags.jpg</div>'}))" />
+        </div>
+        <div class="hero-photo-badge">
+          <div class="badge-icon">🌾</div>
+          <div>
+            <div class="badge-title">Fresh Stock</div>
+            <div class="badge-sub">Restocked weekly</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-figure">
+        <div class="about-figure-inner">
+          <img src="images/about-groundnut.jpg" alt="Shelled groundnut at Iyabeji Ventures, Bodija Market"
+            onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'img-placeholder', innerHTML:'<div class=&quot;ph-icon&quot;>🥜</div><div class=&quot;ph-label&quot;>Photo: Groundnut close-up</div><div class=&quot;ph-sub&quot;>Add images/about-groundnut.jpg</div>'}))" />
+        </div>
+      </div>
+      <div class="about-copy">
+        <span class="section-eyebrow">Our Story</span>
+        <h2>Twenty-six years at the heart of Bodija Market</h2>
+        <p>A fixture of <strong>Bodija Market, Ibadan</strong> since 1999, Iyabeji sources, cleans, and grades quality groundnut and egusi for households, vendors, and bulk buyers across Oyo State, by the measure or by the bag.</p>
+
+        <div class="milestones">
+          <div>
+            <div class="milestone-num">1999</div>
+            <div class="milestone-label">Year established</div>
+          </div>
+          <div>
+            <div class="milestone-num">Block 550</div>
+            <div class="milestone-label">Bodija Market stall</div>
+          </div>
+          <div>
+            <div class="milestone-num">W/R</div>
+            <div class="milestone-label">Wholesale &amp; retail</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="alt-bg">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">What We Sell</span>
+        <h2>Groundnut &amp; egusi, sold your way</h2>
+        <p>Two staples, sourced and graded with care, available in bulk bags for wholesale buyers or measured out for retail customers.</p>
+      </div>
+
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-photo">
+            <span class="product-tag">Wholesale &amp; Retail</span>
+            <img src="images/about-groundnut.jpg" alt="Shelled groundnut for sale"
+              onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'img-placeholder', innerHTML:'<div class=&quot;ph-icon&quot;>🥜</div><div class=&quot;ph-label&quot;>Photo: Groundnut</div><div class=&quot;ph-sub&quot;>Add images/about-groundnut.jpg</div>'}))" />
+          </div>
+          <div class="product-body">
+            <h3>Groundnut</h3>
+            <p>Sun-dried groundnut sold in full bags for wholesale or measured out for everyday retail: oil pressing, roasting, or home use.</p>
+            <div class="product-specs">
+              <span class="spec-pill">Sold by the bag</span>
+              <span class="spec-pill">Sold by measure</span>
+              <span class="spec-pill">Bulk orders welcome</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-photo">
+            <span class="product-tag">Wholesale &amp; Retail</span>
+            <img src="images/egusi-tray.jpg" alt="Egusi (melon seeds) in a tray"
+              onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'img-placeholder', innerHTML:'<div class=&quot;ph-icon&quot;>🌰</div><div class=&quot;ph-label&quot;>Photo: Egusi seeds in tray</div><div class=&quot;ph-sub&quot;>Add images/egusi-tray.jpg</div>'}))" />
+          </div>
+          <div class="product-body">
+            <h3>Egusi</h3>
+            <p>Clean, dried melon seeds (egusi) ready for grinding, a staple for soups and stews, sold by the cup or in bulk for vendors.</p>
+            <div class="product-specs">
+              <span class="spec-pill">Sold by the cup</span>
+              <span class="spec-pill">Sold by the bag</span>
+              <span class="spec-pill">Bulk orders welcome</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="location">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Find Us</span>
+        <h2>Visit our stall in Bodija Market</h2>
+        <p>Located at Block 550, one of the busiest and most trusted trading blocks in Bodija Market, Ibadan.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-card">
+          <div class="location-row">
+            <div class="location-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>Block 550, Bodija Market, Ibadan, Oyo State, Nigeria</p>
+            </div>
+          </div>
+          <div class="location-row">
+            <div class="location-icon">🕒</div>
+            <div>
+              <h4>Trading Hours</h4>
+              <p>Monday – Sunday, 7:00 AM – 8:00 PM</p>
+            </div>
+          </div>
+          <div class="location-row">
+            <div class="location-icon">🚚</div>
+            <div>
+              <h4>Bulk &amp; Delivery Enquiries</h4>
+              <p>Call ahead for large wholesale orders and delivery arrangements</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-frame">
+          <div class="map-visual"></div>
+          <div class="map-grid-lines"></div>
+          <div class="map-pin-wrap">
+            <div class="map-pin">
+              <div class="map-pin-dot"><span>📍</span></div>
+              <div class="map-pin-label">Block 550, Bodija Market</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-section">
+      <div class="contact-inner">
+        <div class="contact-head">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2>Order your groundnut &amp; egusi today</h2>
+          <p>Reach out by phone or email for pricing, bulk orders, or to arrange pickup at Block 550, Bodija Market.</p>
+        </div>
+
+        <div class="contact-methods">
+          <a class="contact-card" href="tel:08054524427">
+            <div class="contact-card-icon">📞</div>
+            <div>
+              <div class="contact-card-label">Phone / WhatsApp</div>
+              <div class="contact-card-value">0805 452 4427</div>
+            </div>
+          </a>
+          <a class="contact-card" href="mailto:selimotikeowo@gmail.com">
+            <div class="contact-card-icon">✉️</div>
+            <div>
+              <div class="contact-card-label">Email</div>
+              <div class="contact-card-value">selimotikeowo@gmail.com</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-hours">
+          <span><strong>Visit us:</strong> Block 550, Bodija Market, Ibadan, Oyo State</span>
+          <span>·</span>
+          <span>Open Monday – Sunday</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark" style="width:28px;height:28px;font-size:0.8rem;">IG</span>
+      Iyabeji Groundnut &amp; Egusi Ventures
+    </div>
+    <p>&copy; 2026 Iyabeji Ventures · Block 550, Bodija Market, Ibadan.</p>
+  </div>
+</footer>
+
+</body>
+</html>
